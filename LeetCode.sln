@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{C22AD94B-4CC9-4348-93CD-619FFB8D36E7}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0002.AddTwoNumbers", "0002.AddTwoNumbers\0002.AddTwoNumbers.csproj", "{869B4137-856A-4648-8E3C-63DB639FFFDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0003.LongestSubstringWithoutRepeatingCharacters", "0003.LongestSubstringWithoutRepeatingCharacters\0003.LongestSubstringWithoutRepeatingCharacters.csproj", "{FAFA48C3-78CE-41C3-BC99-7461F1872E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0005.LongestPalindromicSubstring", "0005.LongestPalindromicSubstring\0005.LongestPalindromicSubstring.csproj", "{CB84C3CD-5404-4A07-AC87-818E3943D1AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FAFA48C3-78CE-41C3-BC99-7461F1872E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFA48C3-78CE-41C3-BC99-7461F1872E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFA48C3-78CE-41C3-BC99-7461F1872E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB84C3CD-5404-4A07-AC87-818E3943D1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB84C3CD-5404-4A07-AC87-818E3943D1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB84C3CD-5404-4A07-AC87-818E3943D1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB84C3CD-5404-4A07-AC87-818E3943D1AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
