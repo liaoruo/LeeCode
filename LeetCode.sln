@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{C22AD94B-4CC9-4348-93CD-619FFB8D36E7}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0008.StringToInteger", "0008.StringToInteger\0008.StringToInteger.csproj", "{DE14BCCD-1954-4B7F-9D75-F326E8F0370F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0009.PalindromeNumber", "0009.PalindromeNumber\0009.PalindromeNumber.csproj", "{8D16B20E-4381-404A-AF6F-20545F06335B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0010.RegularExpressionMatching", "0010.RegularExpressionMatching\0010.RegularExpressionMatching.vcxproj", "{F6E65F76-D2F2-4085-9D89-D70169F32EC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,16 @@ Global
 		{8D16B20E-4381-404A-AF6F-20545F06335B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{8D16B20E-4381-404A-AF6F-20545F06335B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8D16B20E-4381-404A-AF6F-20545F06335B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Debug|Win32.Build.0 = Debug|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Release|Win32.ActiveCfg = Release|Win32
+		{F6E65F76-D2F2-4085-9D89-D70169F32EC4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
