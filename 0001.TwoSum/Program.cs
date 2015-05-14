@@ -10,32 +10,49 @@ namespace _0001.TwoSum
     {
         static void Main(string[] args)
         {
-            var numbers = new int[] { 2, 7, 11, 15 };
-            var target = 9;
-            var ret = TwoSum(numbers, target);
+            var numbers = new int[] { 2, 7, 11, 2 };
+            var target = 4;
+            var solution = new Solution();
+            var ret = solution.TwoSum(numbers, target);
             
-            System.Console.WriteLine(ret == null ? "null" : ret.Item1 + "," + ret.Item2);
+            System.Console.WriteLine(ret == null ? "null" : ret[0] + "," + ret[1]);
         }
-        static public Tuple<int, int> TwoSum(int[] numbers, int target)
+        public class Solution
         {
-            Dictionary<int, int> dic = new Dictionary<int, int>();
-            int cnt = numbers.Count();
-            for (int i = 0; i < cnt; i++)
+            public int[] TwoSum(int[] nums, int target)
             {
-                int need = target - numbers[i];
-                if (dic.ContainsKey(need))
+                Dictionary<int, List<int>> dic = new Dictionary<int, List<int>>();
+                for (var i = 0; i < nums.Length; i++)
                 {
-                    return new Tuple<int, int>(dic[need] + 1, i + 1);
-                }
-                else
-                {
-                    if (!dic.ContainsKey(numbers[i]))
+                    if (dic.ContainsKey(nums[i]))
                     {
-                        dic.Add(numbers[i], i);
+                        dic[nums[i]].Add(i);
+                    }
+                    else
+                    {
+                        dic.Add(nums[i], new List<int>(){i});
                     }
                 }
+                for (var i = 0; i < nums.Length; i++)
+                {
+                    var find = target - nums[i];
+                    if (find != nums[i])
+                    {
+                        if (dic.ContainsKey(find))
+                        {
+                            return new int[2] { i + 1, dic[find][0] + 1 };
+                        }
+                    }
+                    else
+                    {
+                        if (dic.ContainsKey(find)&&dic[find].Count>=2)
+                        {
+                            return new int[2] { dic[find][0] + 1, dic[find][1] + 1 };
+                        }
+                    }
+                }
+                return null;
             }
-            return null;
         }
     }
 }
