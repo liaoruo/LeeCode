@@ -21,33 +21,20 @@ namespace _0001.TwoSum
         {
             public int[] TwoSum(int[] nums, int target)
             {
-                Dictionary<int, List<int>> dic = new Dictionary<int, List<int>>();
-                for (var i = 0; i < nums.Length; i++)
+                Dictionary<int, int> dic = new Dictionary<int, int>();
+                var cnt = nums.Length;
+                for (var i = 0; i < cnt; i++)
                 {
-                    if (dic.ContainsKey(nums[i]))
+                    var need = target - nums[i];
+                    if (dic.ContainsKey(need))
                     {
-                        dic[nums[i]].Add(i);
+                        return new int[] { dic[need] + 1, i + 1 };
                     }
                     else
                     {
-                        dic.Add(nums[i], new List<int>(){i});
-                    }
-                }
-                for (var i = 0; i < nums.Length; i++)
-                {
-                    var find = target - nums[i];
-                    if (find != nums[i])
-                    {
-                        if (dic.ContainsKey(find))
+                        if (!dic.ContainsKey(nums[i]))
                         {
-                            return new int[2] { i + 1, dic[find][0] + 1 };
-                        }
-                    }
-                    else
-                    {
-                        if (dic.ContainsKey(find)&&dic[find].Count>=2)
-                        {
-                            return new int[2] { dic[find][0] + 1, dic[find][1] + 1 };
+                            dic.Add(nums[i], i);
                         }
                     }
                 }
