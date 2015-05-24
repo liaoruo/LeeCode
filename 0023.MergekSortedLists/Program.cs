@@ -22,6 +22,7 @@ namespace _0023.MergekSortedLists
             l3.next = new ListNode(2);
             l3.next.next = new ListNode(3);
 
+           
             Solution solution = new Solution();
             var ret=solution.MergeKLists(new ListNode[] { l1, l2, l3 });
             while(ret!=null)
@@ -104,6 +105,7 @@ namespace _0023.MergekSortedLists
                         sd.Add(clone.val, clone);
                         break;
                     }
+
                 }
                 
 
