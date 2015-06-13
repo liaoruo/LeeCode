@@ -36,14 +36,25 @@ namespace _0028.ImplementstrStr
 
             //KMP
             var nextArr = CalNextArr(needle);
+            var ret = KMP(haystack, needle, nextArr);
+
+            return ret;
+        }
+
+        public int KMP(string mainStr, string searchStr, List<int> nextArr)
+        {
+            if (nextArr == null || string.IsNullOrEmpty(searchStr) || string.IsNullOrEmpty(mainStr) || nextArr.Count != searchStr.Length)
+            {
+                return -1;
+            }
 
             var i = 0;
             var j = 0;
-            var len1 = haystack.Length;
-            var len2 = needle.Length;
+            var len1 = mainStr.Length;
+            var len2 = searchStr.Length;
             while (i < len1 && j < len2)
             {
-                if (haystack[i] == needle[j])
+                if (mainStr[i] == searchStr[j])
                 {
                     i++; j++;
                 }
@@ -66,7 +77,6 @@ namespace _0028.ImplementstrStr
             {
                 return -1;
             }
-
         }
 
         public List<int> CalNextArr(string s)
