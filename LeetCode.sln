@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0028.ImplementstrStr", "002
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0029.DivideTwoIntegers", "0029.DivideTwoIntegers\0029.DivideTwoIntegers.csproj", "{42F257EB-F3C7-4E4F-BFF3-39383F67273F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0030.SubstringwithConcatenationofAllWords", "0030.SubstringwithConcatenationofAllWords\0030.SubstringwithConcatenationofAllWords.csproj", "{100ED8C5-7769-42B1-9730-4AFB904E8FC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -469,6 +471,16 @@ Global
 		{42F257EB-F3C7-4E4F-BFF3-39383F67273F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{42F257EB-F3C7-4E4F-BFF3-39383F67273F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{42F257EB-F3C7-4E4F-BFF3-39383F67273F}.Release|Win32.ActiveCfg = Release|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{100ED8C5-7769-42B1-9730-4AFB904E8FC9}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
